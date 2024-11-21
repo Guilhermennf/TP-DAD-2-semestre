@@ -5,7 +5,9 @@ import { Text } from "~/components/ui/text";
 export function HomeScreen() {
     return (
         <View className="flex-1 justify-center items-center">
-            <Text className="text-xl">Bem-vindo à Brasil API Demo</Text>
+            <Text className="text-xl text-dark">
+                Bem-vindo à Brasil API Demo
+            </Text>
         </View>
     );
 }
