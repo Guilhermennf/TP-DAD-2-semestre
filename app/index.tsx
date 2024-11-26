@@ -4,6 +4,7 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import { HomeScreen } from "./screens/Home";
 import { CEPScreen } from "./screens/CEP";
 import { BancosScreen } from "./screens/Bancos";
+import { CNPJScreen } from "./screens/CNPJ";
 
 const Drawer = createDrawerNavigator();
 
@@ -20,6 +21,14 @@ export default function App() {
                     name="CEP"
                     component={CEPScreen}
                     options={{ title: "Consulta CEP" }}
+                />
+                <Drawer.Screen
+                    name="CNPJ"
+                    component={CNPJScreen}
+                    options={{
+                        drawerLabel: "Consulta CNPJ",
+                        title: "Consulta CNPJ",
+                    }}
                 />
                 <Drawer.Screen
                     name="Bancos"
